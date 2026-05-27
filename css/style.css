@@ -770,52 +770,52 @@ h2{
    FULL ANDROID TAP / BLUE HIGHLIGHT REMOVAL
 ========================================= */
 
-/* global removal */
+/* =========================================
+   FULL ANDROID TAP HIGHLIGHT KILLER
+========================================= */
+
+html,
+body,
 * {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
 }
 
-/* interactive elements hard reset */
 a,
 button,
-.accordion-toggle,
-.accordion-item,
 .nav-item,
+.accordion-toggle,
 .dua-link {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
   touch-action: manipulation;
+  user-select: none;
+  outline: none !important;
+  background-image: none !important;
 }
 
-/* kill default active blue/grey overlay */
+/* kill the pressed blue/grey flash */
 a:active,
 button:active,
-.accordion-toggle:active,
-.accordion-item:active,
 .nav-item:active,
+.accordion-toggle:active,
 .dua-link:active {
+  background: transparent !important;
   background-color: transparent !important;
+  color: inherit !important;
   outline: none !important;
+  box-shadow: none !important;
 }
 
-/* prevent focus ring weirdness on Android Chrome */
-a:focus,
-button:focus,
-.accordion-toggle:focus {
-  outline: none !important;
-}
-
-/* clean Apple-style focus (optional but recommended) */
+/* keep a clean focus style for keyboard users */
 a:focus-visible,
 button:focus-visible,
-.accordion-toggle:focus-visible {
-  outline: 2px solid rgba(17, 17, 17, 0.15);
+.nav-item:focus-visible,
+.accordion-toggle:focus-visible,
+.dua-link:focus-visible {
+  outline: 2px solid rgba(17, 17, 17, 0.15) !important;
   outline-offset: 3px;
   border-radius: 14px;
-}
-
-/* remove visited link color shift */
-a:visited {
-  color: inherit;
 }
