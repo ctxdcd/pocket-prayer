@@ -48,6 +48,64 @@
       </section>
 
       <section class="glass-card section-card">
+  <div class="section-head">
+    <div>
+      <p class="info-card__label">Daily tracker</p>
+      <h2>Salah attendance</h2>
+    </div>
+
+    <span class="pill pill--soft">Auto saved</span>
+  </div>
+
+  <div class="salah-tracker">
+    
+    <!-- Date Navigation -->
+    <div class="tracker-datebar">
+      <button class="date-nav-btn" id="prevDayBtn" aria-label="Previous day">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.7 5.3 9 12l6.7 6.7-1.4 1.4L6.2 12l8.1-8.1z"/>
+        </svg>
+      </button>
+
+      <div class="tracker-datecopy">
+        <p class="tracker-date-label">Selected Day</p>
+        <h3 id="trackerDate"></h3>
+      </div>
+
+      <button class="date-nav-btn" id="nextDayBtn" aria-label="Next day">
+        <svg viewBox="0 0 24 24">
+          <path d="m8.3 18.7 6.7-6.7-6.7-6.7 1.4-1.4 8.1 8.1-8.1 8.1z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Progress -->
+    <div class="tracker-progress">
+      <div class="tracker-progress__top">
+        <span>Daily Completion</span>
+        <strong id="trackerPercent">0%</strong>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <p class="tracker-progress__meta" id="trackerMeta">
+        0 of 5 prayers completed
+      </p>
+    </div>
+
+    <!-- Checklist -->
+    <div class="tracker-list" id="trackerList"></div>
+
+    <p class="tracker-note">
+      Your progress is stored locally on this device until December 31, 2027.
+    </p>
+
+  </div>
+</section>
+
+      <section class="glass-card section-card">
         <p class="info-card__label">Focus</p>
         <h2>Make wudu. Slow down. Stand before Allah with intention.</h2>
         <p class="body-copy">
@@ -86,5 +144,6 @@
       </a>
     </nav>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -107,3 +107,170 @@ function tickCountdown() {
 
 tickCountdown();
 setInterval(tickCountdown, 1000);
+
+
+
+
+/* =========================================
+   DAILY SALAH TRACKER
+========================================= */
+
+const salahTrackerPrayers = [
+  "Fajr",
+  "Dhuhr",
+  "Asr",
+  "Maghrib",
+  "Isha"
+];
+
+const STORAGE_KEY = "pocketPrayerTrackerData";
+
+const trackerDateEl = document.getElementById("trackerDate");
+const trackerListEl = document.getElementById("trackerList");
+const trackerPercentEl = document.getElementById("trackerPercent");
+const trackerMetaEl = document.getElementById("trackerMeta");
+const progressFillEl = document.getElementById("progressFill");
+
+const prevDayBtn = document.getElementById("prevDayBtn");
+const nextDayBtn = document.getElementById("nextDayBtn");
+
+const today = new Date();
+const maxDate = new Date("2027-12-31");
+
+let selectedDate = new Date();
+
+function formatDateKey(date) {
+  return date.toISOString().split("T")[0];
+}
+
+function formatDisplayDate(date) {
+  return date.toLocaleDateString("en-GB", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
+}
+
+function getTrackerData() {
+  return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+}
+
+function saveTrackerData(data) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+
+function getDayData(dateKey) {
+  const data = getTrackerData();
+
+  if (!data[dateKey]) {
+    data[dateKey] = {};
+  }
+
+  return data[dateKey];
+}
+
+function togglePrayer(prayerName) {
+  const dateKey = formatDateKey(selectedDate);
+  const data = getTrackerData();
+
+  if (!data[dateKey]) {
+    data[dateKey] = {};
+  }
+
+  data[dateKey][prayerName] = !data[dateKey][prayerName];
+
+  saveTrackerData(data);
+
+  renderTracker();
+}
+
+function renderTracker() {
+  const dateKey = formatDateKey(selectedDate);
+
+  trackerDateEl.textContent = formatDisplayDate(selectedDate);
+
+  trackerListEl.innerHTML = "";
+
+  const dayData = getDayData(dateKey);
+
+  let completed = 0;
+
+  salahTrackerPrayers.forEach((prayer) => {
+    const checked = !!dayData[prayer];
+
+    if (checked) completed++;
+
+    const item = document.createElement("label");
+    item.className = `tracker-item ${checked ? "is-done" : ""}`;
+
+    item.innerHTML = `
+      <input 
+        type="checkbox"
+        class="tracker-checkbox"
+        ${checked ? "checked" : ""}
+      />
+
+      <div class="tracker-item__check"></div>
+
+      <div class="tracker-item__label">
+        ${prayer}
+      </div>
+
+      <div class="tracker-item__status">
+        ${checked ? "Completed" : "Not completed"}
+      </div>
+    `;
+
+    item.addEventListener("click", () => {
+      togglePrayer(prayer);
+    });
+
+    trackerListEl.appendChild(item);
+  });
+
+  const percent = Math.round((completed / salahTrackerPrayers.length) * 100);
+
+  trackerPercentEl.textContent = `${percent}%`;
+
+  trackerMetaEl.textContent =
+    `${completed} of ${salahTrackerPrayers.length} prayers completed`;
+
+  progressFillEl.style.width = `${percent}%`;
+
+  updateNavButtons();
+}
+
+function updateNavButtons() {
+  const todayKey = formatDateKey(today);
+  const selectedKey = formatDateKey(selectedDate);
+  const maxKey = formatDateKey(maxDate);
+
+  prevDayBtn.disabled = false;
+
+  nextDayBtn.disabled =
+    selectedKey >= todayKey || selectedKey >= maxKey;
+}
+
+function changeDay(amount) {
+  const newDate = new Date(selectedDate);
+
+  newDate.setDate(newDate.getDate() + amount);
+
+  if (newDate > today) return;
+  if (newDate > maxDate) return;
+
+  selectedDate = newDate;
+
+  renderTracker();
+}
+
+prevDayBtn?.addEventListener("click", () => {
+  changeDay(-1);
+});
+
+nextDayBtn?.addEventListener("click", () => {
+  changeDay(1);
+});
+
+renderTracker();

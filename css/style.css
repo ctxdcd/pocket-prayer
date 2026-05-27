@@ -367,3 +367,241 @@ h2{
     padding:24px;
   }
 }
+
+
+/* =========================================
+   SALAH TRACKER
+========================================= */
+
+.salah-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tracker-datebar,
+.tracker-progress,
+.tracker-item {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.tracker-datebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 24px;
+}
+
+.tracker-datecopy {
+  flex: 1;
+  text-align: center;
+}
+
+.tracker-date-label {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(15, 23, 42, 0.55);
+}
+
+.tracker-datecopy h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: #0f172a;
+}
+
+.date-nav-btn {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 23, 42, 0.06);
+  color: #0f172a;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+  flex-shrink: 0;
+}
+
+.date-nav-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(15, 23, 42, 0.1);
+}
+
+.date-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.date-nav-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.tracker-progress {
+  padding: 1rem 1.1rem 1.05rem;
+  border-radius: 24px;
+}
+
+.tracker-progress__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.progress-track {
+  width: 100%;
+  height: 11px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #0f172a, #64748b);
+  transition: width 0.25s ease;
+}
+
+.tracker-progress__meta {
+  margin: 0.7rem 0 0;
+  font-size: 0.92rem;
+  color: rgba(15, 23, 42, 0.68);
+}
+
+.tracker-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tracker-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  padding: 1rem 1.05rem;
+  border-radius: 22px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.05);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.tracker-item:hover {
+  transform: translateY(-1px);
+}
+
+.tracker-item.is-done {
+  background: rgba(15, 23, 42, 0.04);
+  border-color: rgba(15, 23, 42, 0.14);
+}
+
+.tracker-checkbox {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.tracker-item__check {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 2px solid rgba(15, 23, 42, 0.22);
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.tracker-item__check::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+  background: #0f172a;
+}
+
+.tracker-item.is-done .tracker-item__check {
+  background: #0f172a;
+  border-color: #0f172a;
+}
+
+.tracker-item.is-done .tracker-item__check::after {
+  transform: scale(1);
+  background: #fff;
+}
+
+.tracker-item__label {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.tracker-item__status {
+  font-size: 0.86rem;
+  color: rgba(15, 23, 42, 0.58);
+}
+
+.tracker-item.is-done .tracker-item__label,
+.tracker-item.is-done .tracker-item__status {
+  color: rgba(15, 23, 42, 0.85);
+}
+
+.tracker-note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(15, 23, 42, 0.55);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .tracker-datebar {
+    padding: 0.9rem;
+  }
+
+  .tracker-datecopy h3 {
+    font-size: 1rem;
+  }
+
+  .date-nav-btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .tracker-progress,
+  .tracker-item {
+    padding: 0.95rem;
+  }
+
+  .tracker-item {
+    grid-template-columns: 22px minmax(0, 1fr);
+  }
+
+  .tracker-item__status {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 0.2rem;
+  }
+}
