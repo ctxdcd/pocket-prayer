@@ -26,21 +26,48 @@
     </header>
 
     <main class="main">
-      <section class="glass-card section-card">
-        <p class="info-card__label">Daily rhythm</p>
-        <h2>Small words. Steady heart.</h2>
 
-        <div class="dhikr-stack">
-          <div class="dhikr-row"><span>SubhanAllah</span><strong>33</strong></div>
-          <div class="dhikr-row"><span>Alhamdulillah</span><strong>33</strong></div>
-          <div class="dhikr-row"><span>Allahu Akbar</span><strong>34</strong></div>
-        </div>
-      </section>
+  <section class="glass-card section-card dhikr-header">
+    <p class="info-card__label">Daily Dhikr</p>
+    <h2>Small words. Steady heart.</h2>
 
-      <section class="glass-card section-card">
-        <p class="body-copy">This page is separate from the home page, so each section can stay clean, focused, and easy to maintain.</p>
-      </section>
-    </main>
+    <div class="dhikr-nav">
+      <button id="prevDhikr" class="nav-circle" aria-label="Previous dhikr">
+        <svg viewBox="0 0 24 24"><path d="M15.5 19 8.5 12l7-7-1.4-1.4L5.7 12l8.4 8.4 1.4-1.4Z"/></svg>
+      </button>
+
+      <div class="dhikr-title">
+        <span id="dhikrArabic">سبحان الله</span>
+        <small id="dhikrTrans">SubhanAllah</small>
+      </div>
+
+      <button id="nextDhikr" class="nav-circle" aria-label="Next dhikr">
+        <svg viewBox="0 0 24 24"><path d="M8.5 5 15.5 12l-7 7 1.4 1.4L18.3 12 9.9 3.6 8.5 5Z"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="dhikr-counter">
+
+    <div class="ring-wrapper">
+
+      <svg class="progress-ring" width="220" height="220">
+        <circle class="ring-bg" cx="110" cy="110" r="100"></circle>
+        <circle id="ringProgress" class="ring-progress" cx="110" cy="110" r="100"></circle>
+      </svg>
+
+      <button id="tapCircle" class="tap-circle" aria-label="Tap to count">
+        <div class="count" id="count">0</div>
+        <div class="hint">tap</div>
+      </button>
+
+    </div>
+
+    <button id="resetBtn" class="reset-btn">reset</button>
+
+  </section>
+
+</main>
 
     <nav class="bottom-nav" aria-label="Main navigation">
       <a class="nav-item" href="index.html">
@@ -63,11 +90,26 @@
       </a>
       <a class="nav-item" href="dua.html">
         <span class="nav-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 2c3.9 0 7 3.1 7 7 0 2.8-1.7 5.2-4.1 6.3V20h2v2H7v-2h2v-4.7A7 7 0 0 1 12 2Zm0 2a5 5 0 0 0-2 9.6V20h4v-6.4A5 5 0 0 0 12 4Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- paper shape -->
+  <path d="M6 3h9l3 3v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linejoin="round"/>
+
+  <!-- inner lines -->
+  <path d="M8 10h8M8 13h8M8 16h6"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"/>
+
+</svg>
         </span>
         <span>Daily du’a</span>
       </a>
     </nav>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

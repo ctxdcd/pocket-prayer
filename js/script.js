@@ -436,3 +436,110 @@ accordionItems.forEach((item) => {
     }
   });
 });
+
+/* =========================================
+   DHIKR COUNTER MODULE
+========================================= */
+
+const dhikrList = [
+  { arabic: "سبحان الله", trans: "SubhanAllah", target: 33 },
+  { arabic: "الحمد لله", trans: "Alhamdulillah", target: 33 },
+  { arabic: "الله أكبر", trans: "Allahu Akbar", target: 34 }
+];
+
+const dhikrArabicEl = document.getElementById("dhikrArabic");
+const dhikrTransEl = document.getElementById("dhikrTrans");
+const dhikrCountEl = document.getElementById("count");
+const tapCircle = document.getElementById("tapCircle");
+const resetBtn = document.getElementById("resetBtn");
+const prevDhikrBtn = document.getElementById("prevDhikr");
+const nextDhikrBtn = document.getElementById("nextDhikr");
+const ring = document.getElementById("ringProgress");
+
+if (
+  dhikrArabicEl &&
+  dhikrTransEl &&
+  dhikrCountEl &&
+  tapCircle &&
+  resetBtn &&
+  prevDhikrBtn &&
+  nextDhikrBtn &&
+  ring
+) {
+  let index = 0;
+  let count = 0;
+
+  const DHIKR_STORAGE_KEY = "dhikr_state";
+  const radius = 100;
+  const circumference = 2 * Math.PI * radius;
+
+  ring.style.strokeDasharray = circumference;
+  ring.style.strokeDashoffset = circumference;
+
+  function loadState() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(DHIKR_STORAGE_KEY));
+      if (saved) {
+        index = saved.index ?? 0;
+        count = saved.count ?? 0;
+      }
+    } catch (e) {
+      index = 0;
+      count = 0;
+    }
+  }
+
+  function saveState() {
+    localStorage.setItem(
+      DHIKR_STORAGE_KEY,
+      JSON.stringify({ index, count })
+    );
+  }
+
+  function render() {
+    const dhikr = dhikrList[index];
+
+    dhikrArabicEl.textContent = dhikr.arabic;
+    dhikrTransEl.textContent = dhikr.trans;
+    dhikrCountEl.textContent = count;
+
+    const progress = Math.min(count / dhikr.target, 1);
+    ring.style.strokeDashoffset = circumference - progress * circumference;
+
+    saveState();
+  }
+
+  function goNext() {
+    index = (index + 1) % dhikrList.length;
+    count = 0;
+    render();
+  }
+
+  function goPrev() {
+    index = (index - 1 + dhikrList.length) % dhikrList.length;
+    count = 0;
+    render();
+  }
+
+  tapCircle.addEventListener("click", () => {
+    const dhikr = dhikrList[index];
+    count++;
+
+    render();
+
+    if (count >= dhikr.target) {
+      setTimeout(goNext, 250);
+    }
+  });
+
+  resetBtn.addEventListener("click", () => {
+    count = 0;
+    render();
+  });
+
+  nextDhikrBtn.addEventListener("click", goNext);
+  prevDhikrBtn.addEventListener("click", goPrev);
+
+  loadState();
+  render();
+}

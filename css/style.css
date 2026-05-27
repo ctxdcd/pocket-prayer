@@ -767,8 +767,148 @@ h2{
 }
 
 /* =========================================
-   FULL ANDROID TAP / BLUE HIGHLIGHT REMOVAL
+   DHIKR MODULE
 ========================================= */
+
+.dhikr-header{
+  text-align:center;
+}
+
+.dhikr-nav{
+  margin-top:16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.nav-circle{
+  width:44px;
+  height:44px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.7);
+  display:grid;
+  place-items:center;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  transition:transform .15s ease;
+}
+
+.nav-circle:active{
+  transform:scale(.92);
+}
+
+.nav-circle svg{
+  width:18px;
+  height:18px;
+  fill:var(--text);
+}
+
+.dhikr-title{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.dhikr-title span{
+  font-size:1.6rem;
+  font-weight:600;
+  letter-spacing:-0.02em;
+}
+
+.dhikr-title small{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+/* CENTER COUNTER */
+.dhikr-counter{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+}
+
+.ring-wrapper{
+  position:relative;
+  width:220px;
+  height:220px;
+  display:grid;
+  place-items:center;
+}
+
+/* SVG RING */
+.progress-ring{
+  position:absolute;
+  transform:rotate(-90deg);
+}
+
+.ring-bg{
+  fill:none;
+  stroke:rgba(17,17,17,.08);
+  stroke-width:10;
+}
+
+.ring-progress{
+  fill:none;
+  stroke:#111;
+  stroke-width:10;
+  stroke-linecap:round;
+  stroke-dasharray:628;
+  stroke-dashoffset:628;
+  transition:stroke-dashoffset .25s ease;
+}
+
+/* TAP BUTTON */
+.tap-circle{
+  width:150px;
+  height:150px;
+  border-radius:999px;
+  border:1px solid rgba(17,17,17,.1);
+  background:rgba(255,255,255,.85);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 18px 40px rgba(0,0,0,.08);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  transition:transform .12s ease;
+  outline:none;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.tap-circle:active{
+  transform:scale(.96);
+}
+
+.count{
+  font-size:2.2rem;
+  font-weight:700;
+  letter-spacing:-0.04em;
+}
+
+.hint{
+  font-size:.75rem;
+  color:var(--muted);
+}
+
+/* RESET */
+.reset-btn{
+  border:none;
+  background:transparent;
+  color:var(--muted);
+  font-size:.85rem;
+  cursor:pointer;
+  transition:opacity .2s ease;
+}
+
+.reset-btn:active{
+  opacity:.5;
+}
 
 /* =========================================
    FULL ANDROID TAP HIGHLIGHT KILLER
