@@ -766,26 +766,56 @@ h2{
   padding-top: 6px;
 }
 
-/* =========================
-   INTERACTION CLEANUP
-========================= */
+/* =========================================
+   FULL ANDROID TAP / BLUE HIGHLIGHT REMOVAL
+========================================= */
 
-a, button {
+/* global removal */
+* {
   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
+/* interactive elements hard reset */
+a,
+button,
+.accordion-toggle,
+.accordion-item,
+.nav-item,
+.dua-link {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+}
+
+/* kill default active blue/grey overlay */
+a:active,
+button:active,
+.accordion-toggle:active,
+.accordion-item:active,
+.nav-item:active,
+.dua-link:active {
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+/* prevent focus ring weirdness on Android Chrome */
 a:focus,
-button:focus {
-  outline: none;
+button:focus,
+.accordion-toggle:focus {
+  outline: none !important;
 }
 
+/* clean Apple-style focus (optional but recommended) */
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+.accordion-toggle:focus-visible {
   outline: 2px solid rgba(17, 17, 17, 0.15);
   outline-offset: 3px;
   border-radius: 14px;
 }
 
+/* remove visited link color shift */
 a:visited {
   color: inherit;
 }
