@@ -368,6 +368,256 @@ h2{
   }
 }
 
+/* =========================================
+   POCKET PRAYER MODAL
+========================================= */
+
+.hero-modal-trigger{
+  border:none;
+  cursor:pointer;
+  transition:
+    transform .16s ease,
+    background-color .16s ease,
+    border-color .16s ease;
+}
+
+.hero-modal-trigger:hover{
+  background:rgba(255,255,255,.96);
+  border-color:rgba(17,17,17,.1);
+}
+
+.hero-modal-trigger:active{
+  transform:scale(.98);
+}
+
+/* OVERLAY */
+
+.modal-overlay{
+  position:fixed;
+  inset:0;
+  z-index:1200;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:24px;
+
+  background:rgba(15,23,42,.28);
+
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+
+  transition:
+    opacity .24s ease,
+    visibility .24s ease;
+}
+
+.modal-overlay.is-visible{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+/* MODAL */
+
+.project-modal{
+  position:relative;
+
+  width:min(100%, 520px);
+
+  padding:28px;
+
+  border-radius:32px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.98) 0%,
+      rgba(248,248,250,.96) 100%
+    );
+
+  border:1px solid rgba(17,17,17,.06);
+
+  box-shadow:
+    0 24px 60px rgba(15,23,42,.16),
+    inset 0 1px 0 rgba(255,255,255,.92);
+
+  transform:
+    translateY(12px)
+    scale(.96);
+
+  transition:
+    transform .24s cubic-bezier(.2,.8,.2,1),
+    opacity .24s ease;
+}
+
+.modal-overlay.is-visible .project-modal{
+  transform:
+    translateY(0)
+    scale(1);
+}
+
+.project-modal__content{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.project-modal__eyebrow{
+  margin:0;
+
+  font-size:.72rem;
+  font-weight:700;
+
+  letter-spacing:.18em;
+  text-transform:uppercase;
+
+  color:rgba(15,23,42,.48);
+}
+
+.project-modal__title{
+  margin:0;
+
+  font-size:clamp(1.7rem, 5vw, 2.3rem);
+
+  line-height:1.05;
+  letter-spacing:-0.05em;
+
+  color:#0f172a;
+}
+
+.project-modal__body{
+  margin:0;
+
+  font-size:1rem;
+  line-height:1.75;
+
+  color:rgba(15,23,42,.68);
+}
+
+/* CLOSE BUTTON */
+
+.project-modal__close{
+  position:absolute;
+  top:18px;
+  right:18px;
+
+  width:42px;
+  height:42px;
+
+  border:none;
+  border-radius:999px;
+
+  display:grid;
+  place-items:center;
+
+  background:rgba(15,23,42,.05);
+
+  color:#0f172a;
+
+  cursor:pointer;
+
+  transition:
+    transform .16s ease,
+    background-color .16s ease;
+}
+
+.project-modal__close:hover{
+  background:rgba(15,23,42,.08);
+}
+
+.project-modal__close:active{
+  transform:scale(.94);
+}
+
+.project-modal__close svg{
+  width:16px;
+  height:16px;
+
+  stroke:currentColor;
+  stroke-width:2.2;
+  stroke-linecap:round;
+
+  fill:none;
+}
+
+/* DISMISS BUTTON */
+
+.project-modal__dismiss{
+  margin-top:6px;
+
+  min-height:48px;
+
+  border:none;
+  border-radius:18px;
+
+  background:#0f172a;
+  color:#fff;
+
+  font-size:.96rem;
+  font-weight:600;
+  letter-spacing:-0.01em;
+
+  cursor:pointer;
+
+  transition:
+    transform .16s ease,
+    opacity .16s ease;
+}
+
+.project-modal__dismiss:active{
+  transform:scale(.985);
+}
+
+.project-modal__dismiss:hover{
+  opacity:.92;
+}
+
+/* REMOVE BLUE OUTLINES */
+
+.hero-modal-trigger,
+.project-modal__close,
+.project-modal__dismiss{
+  outline:none;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.hero-modal-trigger:focus-visible,
+.project-modal__close:focus-visible,
+.project-modal__dismiss:focus-visible{
+  box-shadow:
+    0 0 0 4px rgba(15,23,42,.08);
+}
+
+/* MOBILE */
+
+@media (max-width: 640px){
+
+  .modal-overlay{
+    align-items:flex-end;
+    padding:14px;
+  }
+
+  .project-modal{
+    width:100%;
+    padding:24px;
+    border-radius:28px 28px 24px 24px;
+  }
+
+  .project-modal__title{
+    font-size:1.85rem;
+  }
+
+  .project-modal__body{
+    font-size:.96rem;
+  }
+}
+
 
 /* =========================================
    SALAH TRACKER

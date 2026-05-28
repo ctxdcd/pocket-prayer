@@ -61,9 +61,20 @@
         </p>
 
         <div class="hero__actions">
-          <a class="cta" href="salah.html">Go to Salah</a>
-          <a class="ghost" href="dua.html">Daily Du’a</a>
-        </div>
+  <a class="cta" href="salah.html">
+    Go to Salah
+  </a>
+
+  <button
+    class="ghost hero-modal-trigger"
+    type="button"
+    id="openPocketPrayerModal"
+    aria-haspopup="dialog"
+    aria-controls="pocketPrayerModal"
+  >
+    About
+  </button>
+</div>
       </section>
 
       <section class="overview-grid">
@@ -172,6 +183,63 @@
       </a>
     </nav>
   </div>
+
+  <!-- =========================================
+     POCKET PRAYER MODAL
+========================================= -->
+
+<div
+  class="modal-overlay"
+  id="pocketPrayerModal"
+  aria-hidden="true"
+>
+  <div
+    class="project-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="projectModalTitle"
+  >
+    <button
+      class="project-modal__close"
+      type="button"
+      id="closePocketPrayerModal"
+      aria-label="Close modal"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 6 18 18M18 6 6 18"/>
+      </svg>
+    </button>
+
+    <div class="project-modal__content">
+      <p class="project-modal__eyebrow">
+        PERSONAL PROJECT
+      </p>
+
+      <h2
+        class="project-modal__title"
+        id="projectModalTitle"
+      >
+        Pocket Prayer
+      </h2>
+
+      <p class="project-modal__body">
+        Pocket Prayer is a personal project created to support my own learning and make my daily journey in faith feel calmer, simpler, and more consistent.
+      </p>
+
+      <p class="project-modal__body">
+        Because this platform is built for personal growth, any feedback, advice, corrections, or thoughtful suggestions about the text, experience, or features are sincerely welcome and deeply appreciated.
+      </p>
+
+      <button
+        class="project-modal__dismiss"
+        type="button"
+        id="dismissPocketPrayerModal"
+      >
+        Dismiss
+      </button>
+    </div>
+  </div>
+</div>
 
   <script src="js/script.js"></script>
 </body>

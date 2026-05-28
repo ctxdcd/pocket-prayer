@@ -132,6 +132,54 @@ function tickCountdown() {
 tickCountdown();
 setInterval(tickCountdown, 1000);
 
+/* =========================================
+   POCKET PRAYER MODAL
+========================================= */
+
+const modalOverlay = document.getElementById("pocketPrayerModal");
+const openModalBtn = document.getElementById("openPocketPrayerModal");
+const closeModalBtn = document.getElementById("closePocketPrayerModal");
+const dismissModalBtn = document.getElementById("dismissPocketPrayerModal");
+
+function openPocketPrayerModal() {
+  modalOverlay.classList.add("is-visible");
+  document.body.style.overflow = "hidden";
+}
+
+function closePocketPrayerModal() {
+  modalOverlay.classList.remove("is-visible");
+  document.body.style.overflow = "";
+}
+
+if (openModalBtn && modalOverlay) {
+
+  openModalBtn.addEventListener("click", () => {
+    openPocketPrayerModal();
+  });
+
+  closeModalBtn.addEventListener("click", () => {
+    closePocketPrayerModal();
+  });
+
+  dismissModalBtn.addEventListener("click", () => {
+    closePocketPrayerModal();
+  });
+
+  modalOverlay.addEventListener("click", (event) => {
+    if (event.target === modalOverlay) {
+      closePocketPrayerModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      modalOverlay.classList.contains("is-visible")
+    ) {
+      closePocketPrayerModal();
+    }
+  });
+}
 
 
 /* =========================================
@@ -543,3 +591,4 @@ if (
   loadState();
   render();
 }
+
