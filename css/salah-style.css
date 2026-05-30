@@ -1,0 +1,354 @@
+:root {
+  --bg: #f5f5f7;
+  --bg-2: #ffffff;
+  --card: rgba(255,255,255,.72);
+  --card-strong: rgba(255,255,255,.88);
+  --border: rgba(17,17,17,.08);
+  --text: #111111;
+  --muted: #6e6e73;
+  --shadow: 0 14px 40px rgba(0,0,0,.08);
+  --radius: 28px;
+  --nav-h: 76px;
+  --max: 820px;
+}
+
+*{
+  box-sizing:border-box
+}
+
+html,
+body{
+  width:100%;
+  min-height:100%
+}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,.92) 0%, rgba(255,255,255,0) 34%),
+    linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+a{
+  color:inherit;
+  text-decoration:none
+}
+
+button{
+  font:inherit
+}
+
+/* =========================================
+   FULL ANDROID TAP HIGHLIGHT KILLER
+========================================= */
+
+html,
+body,
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none !important;
+}
+
+/* =========================================
+   APP SHELL
+========================================= */
+
+.app-shell{
+  width:min(100% - 28px, var(--max));
+  margin-inline:auto;
+  padding:40px 0 120px;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.hero__eyebrow{
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  color:var(--muted);
+  margin-bottom:14px;
+}
+
+.hero__title{
+  margin:0;
+  font-size:clamp(2.2rem, 8vw, 4rem);
+  line-height:.95;
+  letter-spacing:-.04em;
+}
+
+.hero__text{
+  max-width:560px;
+  margin:20px auto 0;
+  color:var(--muted);
+  line-height:1.7;
+  font-size:1rem;
+}
+
+/* =========================================
+   PRAYER GRID
+========================================= */
+
+.prayer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
+
+.prayer-card{
+  position:relative;
+  overflow:hidden;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:26px;
+  backdrop-filter:blur(20px);
+  box-shadow:var(--shadow);
+  transition:.28s ease;
+}
+
+.prayer-card:hover{
+  transform:translateY(-4px);
+}
+
+.prayer-card__arabic{
+  display:block;
+  font-size:2rem;
+  margin-bottom:18px;
+}
+
+.prayer-card h2{
+  margin:0;
+  font-size:1.5rem;
+  letter-spacing:-.03em;
+}
+
+.prayer-card p{
+  margin:8px 0 0;
+  color:var(--muted);
+}
+
+
+
+/* =========================================
+   GUIDE HEADER
+========================================= */
+
+.guide-header{
+  margin-bottom:28px;
+}
+
+.back-button{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:12px 18px;
+  border-radius:999px;
+  background:var(--card);
+  border:1px solid var(--border);
+  margin-bottom:24px;
+  backdrop-filter:blur(20px);
+}
+
+.guide-meta__eyebrow{
+  margin:0 0 12px;
+  color:var(--muted);
+  font-size:.72rem;
+  letter-spacing:.18em;
+  font-weight:700;
+}
+
+.guide-meta h1{
+  margin:0;
+  font-size:clamp(2rem, 8vw, 3.6rem);
+  letter-spacing:-.05em;
+}
+
+.guide-meta p{
+  margin-top:10px;
+  color:var(--muted);
+}
+
+/* =========================================
+   STEPS
+========================================= */
+
+.steps-container{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.step-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:28px;
+  backdrop-filter:blur(20px);
+  box-shadow:var(--shadow);
+}
+
+.step-number{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:#111111;
+  color:#ffffff;
+  display:grid;
+  place-items:center;
+  font-size:.92rem;
+  font-weight:700;
+  margin-bottom:22px;
+}
+
+.step-title{
+  margin:0 0 22px;
+  font-size:1.7rem;
+  letter-spacing:-.03em;
+}
+
+.arabic{
+  font-size:2rem;
+  line-height:2.1;
+  text-align:right;
+  margin-bottom:18px;
+}
+
+.latin{
+  color:var(--text);
+  line-height:1.8;
+  font-style:italic;
+  margin-bottom:16px;
+}
+
+.translation{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+/* =========================================
+   TRANSITION CARD
+========================================= */
+
+.transition-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  padding:18px 20px;
+
+  margin:-4px 0;
+
+  background:
+    rgba(255,255,255,.52);
+
+  border:1px solid
+    rgba(17,17,17,.06);
+
+  border-radius:22px;
+
+  backdrop-filter:blur(18px);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+}
+
+.transition-arabic{
+  font-size:1.8rem;
+  line-height:1.4;
+}
+
+.transition-latin{
+  margin-top:8px;
+
+  font-size:.92rem;
+
+  color:var(--muted);
+
+  font-style:italic;
+}
+
+.translation-en{
+  margin-top:10px;
+  color:rgba(17,17,17,.65);
+  line-height:1.8;
+  font-size:.95rem;
+  border-left:2px solid rgba(17,17,17,.08);
+  padding-left:12px;
+}
+
+/* =========================================
+   META CARD (Rakaat Instruction)
+========================================= */
+
+.meta-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  padding:22px;
+
+  margin:6px 0;
+
+  background:rgba(17,17,17,.03);
+
+  border:1px dashed rgba(17,17,17,.12);
+
+  border-radius:22px;
+
+  text-align:center;
+}
+
+.meta-arabic{
+  font-size:1.6rem;
+  margin-bottom:10px;
+}
+
+.meta-text{
+  font-size:.95rem;
+  color:var(--muted);
+}
+
+
+
+/* =========================================
+   UTILITIES
+========================================= */
+
+.hidden{
+  display:none;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:640px){
+
+  .app-shell{
+    width:min(100% - 20px, var(--max));
+    padding-top:28px;
+  }
+
+  .step-card{
+    padding:22px;
+  }
+
+  .arabic{
+    font-size:1.7rem;
+  }
+
+}
+

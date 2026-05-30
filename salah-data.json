@@ -1,0 +1,472 @@
+{
+  "prayers": {
+    "subh": {
+  "name": "Subuh",
+  "arabicName": "صلاة الصبح",
+  "rakaat": 2,
+  "steps": [
+    "niyyah_subh",
+
+    "takbeer",
+    "iftitah",
+    "al_fatihah",
+    "surah_short",
+
+    "takbir_transition",
+    "ruku",
+
+    "itidal",
+
+    "takbir_transition",
+    "sujud",
+
+    "takbir_transition",
+    "duduk_dua_sujud",
+
+    "takbir_transition",
+    "sujud",
+
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+
+    "takbir_transition",
+    "ruku",
+
+    "itidal",
+
+    "takbir_transition",
+    "sujud",
+
+    "takbir_transition",
+    "duduk_dua_sujud",
+
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+
+    "tashahhud_akhir",
+    "salam"
+  ]
+},
+
+    "dhuhr": {
+      "name": "Dzuhur",
+      "arabicName": "صلاة الظهر",
+      "rakaat": 4,
+      "steps": [
+    "niyyah_dhuhr",
+
+    "takbeer",
+    "iftitah",
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "tashahhud_awal",
+
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+
+    "tashahhud_akhir",
+    "salam"
+  ]
+    },
+
+    "asr": {
+      "name": "Ashar",
+      "arabicName": "صلاة العصر",
+      "rakaat": 4,
+      "steps": [
+    "niyyah_asr",
+
+    "takbeer",
+    "iftitah",
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "tashahhud_awal",
+
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+
+    "tashahhud_akhir",
+    "salam"
+  ]
+    },
+
+    "maghrib": {
+      "name": "Maghrib",
+      "arabicName": "صلاة المغرب",
+      "rakaat": 3,
+      "steps": [
+    "niyyah_maghrib",
+
+    "takbeer",
+    "iftitah",
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "tashahhud_awal",
+    
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+
+    "tashahhud_akhir",
+    "salam"
+  ]
+    },
+
+    "isha": {
+      "name": "Isya",
+      "arabicName": "صلاة العشاء",
+      "rakaat": 4,
+      "steps": [
+    "niyyah_isha",
+
+    "takbeer",
+    "iftitah",
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "tashahhud_awal",
+
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+
+    "rakaat_repeat",
+
+    "al_fatihah",
+    "surah_short",
+    "takbir_transition",
+    "ruku",
+    "itidal",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+    "duduk_dua_sujud",
+    "takbir_transition",
+    "sujud",
+    "takbir_transition",
+
+    "tashahhud_akhir",
+    "salam"
+  ]
+    }
+  },
+
+  
+
+  
+  "definitions": {
+    "niyyah_subh": {
+      "title": "Niat Salat Subuh",
+      "arabic": "أصلي فرض الصبح ركعتين مستقبل القبلة أداء/مأموما/إماما لله تعالى",
+      "latin": "Usholli fardhol subhi rok'ataini mustaqbilal qiblati adaa an / ma'muuman / imaaman lillaahi ta'aalaa",
+      "translation_id": "Saya berniat sholat fardu subuh dua rakaat menghadap kiblat karena Allah Ta'ala.",
+      "translation_en": "I intend to perform the obligatory Fajr prayer of two rak'ahs, facing the Qiblah, for the sake of Allah Almighty."
+    },
+
+    "niyyah_dhuhr": {
+      "title": "Niat Salat Dzuhur",
+      "arabic": "أصلي فرض الظهر أربع ركعات مستقبل القبلة أداء/مأموما/إماما لله تعالى",
+      "latin": "Usholli fardhol zuhri arba'a roka'aati mustaqbilal qiblati adaa an / ma'muuman / imaaman lillaahi ta'aalaa",
+      "translation_id": "Saya berniat sholat fardu dzuhur empat rakaat menghadap kiblat karena Allah Ta'ala.",
+      "translation_en": "I intend to perform the obligatory Dhuhr prayer of four rak'ahs, facing the Qiblah, for the sake of Allah Almighty."
+    },
+
+    "niyyah_asr": {
+      "title": "Niat Salat Ashar",
+      "arabic": "أصلي فرض العصر أربع ركعات مستقبل القبلة أداء/مأموما/إماما لله تعالى",
+      "latin": "Usholli fardhol ashri arba'a roka'aati mustaqbilal qiblati adaa an / ma'muuman / imaaman lillaahi ta'aalaa",
+      "translation_id": "Saya berniat sholat fardu asar empat rakaat menghadap kiblat karena Allah Ta'ala.",
+      "translation_en": "I intend to perform the obligatory Asr prayer of four rak'ahs, facing the Qiblah, for the sake of Allah Almighty."
+    },
+
+    "niyyah_maghrib": {
+      "title": "Niat Salat Maghrib",
+      "arabic": "أصلي فرض المغرب ثلاث ركعات مستقبل القبلة أداء/مأموما/إماما لله تعالى",
+      "latin": "Usholli fardhol magribi tsalaatsa roka'aati mustaqbilal qiblati adaa an / ma'muuman / imaaman lillaahi ta'aalaa",
+      "translation_id": "Saya berniat sholat fardu maghrib tiga rakaat menghadap kiblat karena Allah Ta'ala.",
+      "translation_en": "I intend to perform the obligatory Maghrib prayer of three rak'ahs, facing the Qiblah, for the sake of Allah Almighty."
+    },
+
+    "niyyah_isha": {
+      "title": "Niat Salat Isya",
+      "arabic": "أصلي فرض العشاء أربع ركعات مستقبل القبلة أداء/مأموما/إماما لله تعالى",
+      "latin": "Usholli fardhol 'isyaa-i arba'a roka'aati mustaqbilal qiblati adaa an / ma'muuman / imaaman lillaahi ta'aalaa",
+      "translation_id": "Saya berniat sholat fardu isya empat rakaat menghadap kiblat karena Allah Ta'ala.",
+      "translation_en": "I intend to perform the obligatory Isha prayer of four rak'ahs, facing the Qiblah, for the sake of Allah Almighty."
+    },
+
+    "takbeer": {
+      "title": "Takbiratul Ihram",
+      "arabic": "اللهُ أَكْبَر",
+      "latin": "Allahu Akbar",
+      "translation_id": "Allah Maha Besar.",
+      "translation_en": "Allah is the Greatest."
+    },
+
+    "takbir_transition": {
+      "title": "Takbir",
+      "arabic": "اللهُ أَكْبَر",
+      "latin": "Allahu Akbar",
+      "translation_id": "Allah Maha Besar.",
+      "type": "transition",
+      "translation_en": "Allah is the Greatest."
+    },
+
+    "iftitah": {
+      "title": "Doa Iftitah",
+      "arabic": "اللهُ أَكْبَرُ كَبِيْراً وَالْحَمْدُ لِلَّهِ كَثِيْراً وَسُبْحَانَ اللهِ بُكْرَةً وَأَصِيْلًا . اِنِّى وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَالسَّمَاوَاتِ وَالْااَرْضَ حَنِيْفًا مُسْلِمًا وَمَا اَنَا مِنَ الْمُشْرِكِيْنَ . اِنَّ صَلَاتِيْ وَنُسُكِيْ وَمَحْيَايَ وَمَمَاتِيْ لِلهِ رَبِّ الْعَالَمِيْنَ . لاَ شَرِيْكَ لَهُ وَبِذَلِكَ اُمِرْتُ وَاَنَا مِنَ الْمُسْلِمِيْنَ",
+      "latin": "Allaahu akbar kabiiraa walhamdulillaahi katsiiraa, wa subhaanallaahi bukratan wa ashiilaa. Innii wajjahtu wajhiya lilladzii fatharas samaawaati wal ardha haniifan musliman wamaa anaa minal musyrikiin. Inna shalaatii wa nusukii wa mahyaaya wa mamaatii lillaahi rabbil 'aalamiin. Laa syariikalahu wa bidzaalika umirtu wa anaa minal muslimiin.",
+      "translation_id": "Allah Maha Besar dengan sebesar-besarnya. Segala puji bagi Allah sebanyak-banyaknya. Maha suci Allah pada waktu pagi dan petang. Aku menghadapkan wajahku kepada Dzat yang menciptakan langit dan bumi dengan penuh kepasrahan dan aku bukan termasuk orang-orang musyrik. Sesungguhnya shalatku, ibadahku, hidupku dan matiku hanya untuk Allah Tuhan seluruh alam. Tidak ada sekutu bagi-Nya dan demikianlah aku diperintahkan dan aku termasuk orang-orang muslim.",
+      "translation_en": "Allah is the Greatest, most great. All praise is for Allah in abundance. Glory be to Allah morning and evening. I turn my face toward the One who created the heavens and the earth, sincerely in submission, and I am not among the polytheists. Indeed, my prayer, my worship, my life, and my death are for Allah, Lord of all worlds. He has no partner, and thus I have been commanded, and I am among the Muslims."
+    },
+
+    "al_fatihah": {
+      "title": "Surah Al-Fatihah",
+      "arabic": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ ۝ اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَ ۝ الرَّحْمٰنِ الرَّحِيْمِ ۝ مٰلِكِ يَوْمِ الدِّيْنِ ۝ اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُ ۝ اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَ ۝ صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّالِّيْنَ",
+      "latin": "Bismillaahirrahmaanirrahiim. Alhamdulillaahi rabbil 'aalamiin. Arrahmaanirrahiim. Maaliki yaumiddiin. Iyyaaka na'budu wa iyyaaka nasta'iin. Ihdinash shiraathal mustaqiim. Shiraathalladziina an'amta 'alaihim ghairil maghdhuubi 'alaihim waladh dhaalliin.",
+      "translation_id": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang. Segala puji bagi Allah Tuhan seluruh alam. Yang Maha Pengasih lagi Maha Penyayang. Pemilik hari pembalasan. Hanya kepada-Mu kami menyembah dan hanya kepada-Mu kami memohon pertolongan. Tunjukilah kami jalan yang lurus. Yaitu jalan orang-orang yang telah Engkau beri nikmat, bukan jalan mereka yang dimurkai dan bukan pula jalan mereka yang sesat.",
+      "translation_en": "In the name of Allah, the Most Gracious, the Most Merciful. All praise is for Allah, Lord of all worlds. The Most Gracious, the Most Merciful. Master of the Day of Judgment. You alone we worship, and You alone we ask for help. Guide us to the straight path. The path of those You have blessed, not of those who earned Your anger, nor of those who go astray."
+    },
+
+    "surah_short": {
+      "title": "Surah Pendek",
+      "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+      "latin": "Qul huwallahu ahad. Allahush shamad. Lam yalid wa lam yuulad. Wa lam yakun lahu kufuwan ahad.",
+      "translation_id": "Katakanlah: Dialah Allah Yang Maha Esa. Allah tempat meminta segala sesuatu. Dia tidak beranak dan tidak diperanakkan. Dan tidak ada sesuatu pun yang setara dengan-Nya.",
+      "translation_en": "Say: He is Allah, the One. Allah, the Eternal Refuge. He neither begets nor is born. Nor is there to Him any equivalent."
+    },
+
+    "ruku": {
+      "title": "Ruku",
+      "arabic": "سُبْحَانَ رَبِّىَ الْعَظِيْمِ وَبِحَمْدِهِ",
+      "latin": "Subhaana rabbiyal 'adhiimi wa bihamdih 3x",
+      "translation_id": "Maha Suci Tuhanku Yang Maha Agung dan segala puji bagi-Nya.",
+      "translation_en": "Glory is to my Lord, the Most Great, and praise is for Him."
+    },
+
+    "itidal": {
+      "title": "I'tidal",
+      "arabic": "سَمِعَ اللهُ لِمَنْ حَمِدَهُ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الْأَرْضِ وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ",
+      "latin": "Sami'allaahu liman hamidah. Rabbanaa lakal hamdu mil us-samaawaati wa mil ul-ardhi wa mil-u maa syi'ta min syai'in ba'du.",
+      "translation_id": "Allah mendengar orang yang memuji-Nya. Ya Allah Tuhan kami, bagi-Mu segala puji sepenuh langit dan bumi dan sepenuh apa yang Engkau kehendaki setelah itu.",
+      "translation_en": "Allah hears those who praise Him. Our Lord, to You belongs all praise filling the heavens and the earth and whatever You will beyond that."
+    },
+
+    "sujud": {
+      "title": "Sujud",
+      "arabic": "سُبْحَانَ رَبِّىَ الأَعْلَى وَبِحَمْدِهِ",
+      "latin": "Subhaana rabbiyal a'laa wa bihamdih 3x",
+      "translation_id": "Maha Suci Tuhanku Yang Maha Tinggi dan segala puji bagi-Nya.",
+      "translation_en": "Glory is to my Lord, the Most High, and praise is for Him."
+    },
+
+    "duduk_dua_sujud": {
+      "title": "Duduk di Antara Dua Sujud",
+      "arabic": "رَبِّ اغْفِرْلِىْ وَارْحَمْنِىْ وَاجْبُرْنِىْ وَارْفَعْنِىْ وَارْزُقْنِىْ وَاهْدِنِىْ وَعَافِنِىْ وَاعْفُ عَنِّىْ",
+      "latin": "Rabbighfirlii warhamnii wajburnii warfa'nii warzuqnii wahdinii wa'aafinii wa'fu 'annii",
+      "translation_id": "Ya Allah, ampunilah aku, rahmatilah aku, cukupilah kekuranganku, angkatlah derajatku, berilah aku rezeki, berilah aku petunjuk, sehatkanlah aku, dan maafkanlah aku.",
+      "translation_en": "My Lord, forgive me, have mercy on me, mend my نقص, raise my rank, provide for me, guide me, grant me well-being, and pardon me."
+    },
+
+    "tashahhud_awal": {
+      "title": "Tasyahud Awal",
+      "arabic": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ",
+      "latin": "Attahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu warahmatullaahi wabarakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna Muhammadar rasuulullaah. Allahumma shalli 'alaa Muhammad.",
+      "translation_id": "Segala penghormatan, keberkahan, rahmat dan kebaikan adalah milik Allah. Semoga keselamatan, rahmat Allah dan berkah-Nya tercurah kepadamu wahai Nabi. Semoga keselamatan tercurah kepada kami dan seluruh hamba Allah yang saleh. Aku bersaksi bahwa tidak ada Tuhan selain Allah dan aku bersaksi bahwa Nabi Muhammad adalah utusan Allah. Ya Allah limpahkanlah rahmat kepada Nabi Muhammad.",
+      "translation_en": "All greetings, blessings, prayers, and good deeds are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah and I bear witness that Muhammad is the Messenger of Allah. O Allah, send blessings upon Muhammad."
+    },
+
+    "tashahhud_akhir": {
+      "title": "Tasyahud Akhir",
+      "arabic": "التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ فِي الْعَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+      "latin": "Attahiyyaatul mubaarakaatush shalawaatuth thayyibaatu lillaah. Assalaamu 'alaika ayyuhan nabiyyu warahmatullaahi wabarakaatuh. Assalaamu 'alainaa wa 'alaa 'ibaadillaahish shaalihiin. Asyhadu allaa ilaaha illallaah wa asyhadu anna Muhammadar rasuulullaah. Allahumma shalli 'alaa Muhammad wa 'alaa aali Muhammad kamaa shallaita 'alaa Ibraahiim wa 'alaa aali Ibraahiim wa baarik 'alaa Muhammad wa 'alaa aali Muhammad kamaa baarakta 'alaa Ibraahiim wa 'alaa aali Ibraahiim fil 'aalamiina innaka hamiidum majiid.",
+      "translation_id": "Segala penghormatan, keberkahan, rahmat dan kebaikan adalah milik Allah. Semoga keselamatan, rahmat Allah dan berkah-Nya tercurah kepadamu wahai Nabi. Semoga keselamatan tercurah kepada kami dan seluruh hamba Allah yang saleh. Aku bersaksi bahwa tidak ada Tuhan selain Allah dan aku bersaksi bahwa Nabi Muhammad adalah utusan Allah. Ya Allah limpahkanlah rahmat dan keberkahan kepada Nabi Muhammad dan keluarga Nabi Muhammad sebagaimana Engkau limpahkan kepada Nabi Ibrahim dan keluarga Nabi Ibrahim. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia.",
+      "translation_en": "All greetings, blessings, prayers, and good deeds are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah and I bear witness that Muhammad is the Messenger of Allah. O Allah, send blessings upon Muhammad and the family of Muhammad as You sent blessings upon Abraham and the family of Abraham. Indeed, You are Praiseworthy, Glorious."
+    },
+
+    "salam": {
+      "title": "Salam",
+      "arabic": "السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ",
+      "latin": "Assalaamu'alaikum warahmatullaah",
+      "translation_id": "Semoga keselamatan dan rahmat Allah tercurah kepada kalian.",
+      "translation_en": "Peace be upon you and the mercy of Allah."
+    },
+
+    "rakaat_repeat": {
+      "title": "Ulangi Rakaat",
+      "arabic": "قُمْ لِلرَّكْعَةِ التَّالِيَةِ",
+      "latin": "Qum lir-rak‘atil taaliyah",
+      "translation_id": "Bangkit dan lanjutkan ke rakaat berikutnya.",
+      "type": "meta",
+      "translation_en": "Stand up for the next rak'ah."
+    }
+  }
+}

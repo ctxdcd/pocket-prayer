@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <title>Home Entry & Exit Du'a</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/dua.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <header class="hero">
+    <p class="hero__eyebrow">Daily Remembrance</p>
+    <h1 class="hero__title">Home Entry & Exit Du'a</h1>
+    <p class="hero__subtitle">
+      Begin and end your journey with remembrance, tawakkul, and protection from Allah ﷻ.
+    </p>
+  </header>
+
+  <section class="practice-card">
+    <div class="section-heading">
+      <span>Practice Mode</span>
+    </div>
+
+    <div class="practice-controls">
+      <button id="practiceToggle" class="action-btn">
+        Enable Practice Mode
+      </button>
+
+      <button id="hideTranslationBtn" class="action-btn secondary">
+        Hide Translation
+      </button>
+
+      <button id="hideArabicBtn" class="action-btn secondary">
+        Hide Arabic
+      </button>
+    </div>
+
+    <p class="practice-note">
+      When Practice Mode is active, tap individual Arabic words to hide or reveal them while memorizing.
+    </p>
+  </section>
+
+  <!-- DOA KELUAR RUMAH -->
+  <section class="dua-card">
+
+    <div class="card-top">
+      <div class="section-heading">
+        <span>Doa Keluar Rumah</span>
+      </div>
+      <p class="card-caption">
+        A du'a for leaving the home while placing your trust in Allah and seeking His protection.
+      </p>
+    </div>
+
+    <div class="arabic-wrapper" id="arabicContainerBefore">
+      <p class="arabic-line">
+        <span class="word">بِسْمِ</span>
+        <span class="word">اللّٰهِ،</span>
+        <span class="word">تَوَكَّلْتُ</span>
+        <span class="word">عَلَى</span>
+        <span class="word">اللّٰهِ،</span>
+        <span class="word">لَا</span>
+        <span class="word">حَوْلَ</span>
+        <span class="word">وَلَا</span>
+        <span class="word">قُوَّةَ</span>
+        <span class="word">إِلَّا</span>
+        <span class="word">بِاللّٰهِ</span>
+      </p>
+    </div>
+
+    <div class="transliteration" id="transliterationContainerBefore">
+      Bismillahi, tawakkaltu 'alallah, la hawla wa la quwwata illa billah.
+    </div>
+
+    <div class="translations" id="translationContainerBefore">
+      <div class="translation-card">
+        <span class="translation-label">Indonesian</span>
+        <p>
+          Dengan nama Allah, aku bertawakal kepada Allah. Tidak ada daya dan kekuatan kecuali dengan pertolongan Allah.
+        </p>
+      </div>
+
+      <div class="translation-card">
+        <span class="translation-label">English</span>
+        <p>
+          In the name of Allah, I place my trust in Allah. There is no power and no strength except by Allah.
+        </p>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <section class="meaning-card">
+    <div class="section-heading">
+      <span>Makna Doa Keluar Rumah</span>
+    </div>
+
+    <p>
+      Leaving the home is not a small act. A believer steps out with tawakkul, knowing that safety, guidance, and strength come only from Allah.
+      This du'a reminds the heart that no movement has real power except by His will.
+    </p>
+
+    <p>
+      It is a quiet declaration of dependence: I begin with Allah, I rely on Allah, and I move only by Allah’s permission.
+    </p>
+  </section>
+
+  <section class="breakdown-card">
+    <div class="section-heading">
+      <span>Word-by-Word Breakdown — Keluar Rumah</span>
+    </div>
+
+    <div class="breakdown-grid">
+      <div class="breakdown-row">
+        <div class="arabic-cell">بِسْمِ</div>
+        <div>Bismi</div>
+        <div>Dengan nama</div>
+        <div>In the name</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">اللّٰهِ</div>
+        <div>Allah</div>
+        <div>Allah</div>
+        <div>Allah</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">تَوَكَّلْتُ</div>
+        <div>Tawakkaltu</div>
+        <div>Aku bertawakal</div>
+        <div>I trust</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">عَلَى</div>
+        <div>'Alaa</div>
+        <div>Kepada / atas</div>
+        <div>Upon</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">اللّٰهِ</div>
+        <div>Allah</div>
+        <div>Allah</div>
+        <div>Allah</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">لَا حَوْلَ</div>
+        <div>La hawla</div>
+        <div>Tidak ada daya</div>
+        <div>No power</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">وَلَا قُوَّةَ</div>
+        <div>Wa la quwwata</div>
+        <div>Dan tidak ada kekuatan</div>
+        <div>And no strength</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">إِلَّا بِاللّٰهِ</div>
+        <div>Illaa billah</div>
+        <div>Kecuali dengan Allah</div>
+        <div>Except by Allah</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOA MASUK RUMAH -->
+  <section class="dua-card">
+
+    <div class="card-top">
+      <div class="section-heading">
+        <span>Doa Masuk Rumah</span>
+      </div>
+      <p class="card-caption">
+        A du'a for entering the home while asking Allah for goodness, blessing, and trust in Him.
+      </p>
+    </div>
+
+    <div class="arabic-wrapper" id="arabicContainerAfter">
+      <p class="arabic-line">
+        <span class="word">اَللّٰهُمَّ</span>
+        <span class="word">إِنِّيْ</span>
+        <span class="word">أَسْأَلُكَ</span>
+        <span class="word">خَيْرَ</span>
+        <span class="word">الْمَوْلِجِ</span>
+        <span class="word">وَخَيْرَ</span>
+        <span class="word">الْمَخْرَجِ</span>
+        <span class="word">بِسْمِ</span>
+        <span class="word">اللّٰهِ</span>
+        <span class="word">وَلَجْنَا</span>
+        <span class="word">وَبِسْمِ</span>
+        <span class="word">اللّٰهِ</span>
+        <span class="word">خَرَجْنَا</span>
+        <span class="word">وَعَلَى</span>
+        <span class="word">اللّٰهِ</span>
+        <span class="word">رَبِّنَا</span>
+        <span class="word">تَوَكَّلْنَا</span>
+      </p>
+    </div>
+
+    <div class="transliteration" id="transliterationContainerAfter">
+      Allahumma innii as-aluka khayral mawlaji wa khayral makhraj. Bismillahi walajnaa, wa bismillahi kharajnaa, wa 'alallahi rabbina tawakkalnaa.
+    </div>
+
+    <div class="translations" id="translationContainerAfter">
+      <div class="translation-card">
+        <span class="translation-label">Indonesian</span>
+        <p>
+          Ya Allah, sesungguhnya aku memohon kepada-Mu kebaikan tempat masuk dan kebaikan tempat keluar. Dengan menyebut nama Allah kami masuk, dengan menyebut nama Allah kami keluar, dan hanya kepada Allah, Tuhan kami, kami bertawakal.
+        </p>
+      </div>
+
+      <div class="translation-card">
+        <span class="translation-label">English</span>
+        <p>
+          O Allah, I ask You for the goodness of entering and the goodness of leaving. In the name of Allah we enter, in the name of Allah we leave, and upon Allah, our Lord, we rely.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="meaning-card">
+    <div class="section-heading">
+      <span>Makna Doa Masuk Rumah</span>
+    </div>
+
+    <p>
+      Entering the home is a moment to bring barakah into the space. This du'a asks Allah for goodness in both entry and exit, and it teaches the heart to remain attached to Him in every transition.
+    </p>
+
+    <p>
+      The believer does not enter relying on himself. He enters with Allah’s name, with trust in Allah, and with a heart that knows blessing comes only from Him.
+    </p>
+  </section>
+
+  <section class="breakdown-card">
+    <div class="section-heading">
+      <span>Word-by-Word Breakdown — Masuk Rumah</span>
+    </div>
+
+    <div class="breakdown-grid">
+      <div class="breakdown-row">
+        <div class="arabic-cell">اَللّٰهُمَّ</div>
+        <div>Allahumma</div>
+        <div>Ya Allah</div>
+        <div>O Allah</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">إِنِّيْ</div>
+        <div>Innii</div>
+        <div>Sesungguhnya aku</div>
+        <div>Indeed I</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">أَسْأَلُكَ</div>
+        <div>As-aluka</div>
+        <div>Memohon kepada-Mu</div>
+        <div>I ask You</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">خَيْرَ</div>
+        <div>Khayra</div>
+        <div>Kebaikan</div>
+        <div>The goodness of</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">الْمَوْلِجِ</div>
+        <div>Al-mawlij</div>
+        <div>Tempat masuk</div>
+        <div>Entering</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">وَخَيْرَ</div>
+        <div>Wa khayra</div>
+        <div>Dan kebaikan</div>
+        <div>And the goodness of</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">الْمَخْرَجِ</div>
+        <div>Al-makhraj</div>
+        <div>Tempat keluar</div>
+        <div>Leaving</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">وَعَلَى اللّٰهِ</div>
+        <div>Wa 'alallahi</div>
+        <div>Dan kepada Allah</div>
+        <div>And upon Allah</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">تَوَكَّلْنَا</div>
+        <div>Tawakkalnaa</div>
+        <div>Kami bertawakal</div>
+        <div>We rely</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+const practiceBtn = document.getElementById("practiceToggle");
+const hideArabicBtn = document.getElementById("hideArabicBtn");
+const hideTranslationBtn = document.getElementById("hideTranslationBtn");
+
+const arabicContainers = [
+  document.getElementById("arabicContainerBefore"),
+  document.getElementById("arabicContainerAfter")
+];
+
+const transliterationContainers = [
+  document.getElementById("transliterationContainerBefore"),
+  document.getElementById("transliterationContainerAfter")
+];
+
+const translationContainers = [
+  document.getElementById("translationContainerBefore"),
+  document.getElementById("translationContainerAfter")
+];
+
+const words = document.querySelectorAll(".word");
+
+let practiceMode = false;
+
+practiceBtn.addEventListener("click", () => {
+  practiceMode = !practiceMode;
+
+  if (practiceMode) {
+    practiceBtn.textContent = "Practice Mode Enabled";
+    document.body.classList.add("practice-active");
+  } else {
+    practiceBtn.textContent = "Enable Practice Mode";
+    document.body.classList.remove("practice-active");
+    words.forEach(word => word.classList.remove("hidden-word"));
+  }
+});
+
+words.forEach(word => {
+  word.addEventListener("click", () => {
+    if (!practiceMode) return;
+    word.classList.toggle("hidden-word");
+  });
+});
+
+hideArabicBtn.addEventListener("click", () => {
+  arabicContainers.forEach(el => el.classList.toggle("hidden-section"));
+  transliterationContainers.forEach(el => el.classList.toggle("hidden-section"));
+});
+
+hideTranslationBtn.addEventListener("click", () => {
+  translationContainers.forEach(el => el.classList.toggle("hidden-section"));
+});
+</script>
+
+</body>
+</html>

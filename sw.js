@@ -1,4 +1,4 @@
-const CACHE_NAME = "pocket-prayer-v1";
+const CACHE_NAME = "pocket-prayer-v2";
 
 const APP_ASSETS = [
   "./",
@@ -6,11 +6,26 @@ const APP_ASSETS = [
   "./salah.html",
   "./dhikr.html",
   "./dua.html",
+  "./introduction-salah.html",
+  "./learn-salah.html",
+  "./waking-up-before-sleeping.html",
+  "./before-after-eating.html",
+  "./leaving-entering-house.html",
+  
 
   "./css/style.css",
+  "./css/introduction-salah.css",
+  "./css/salah-style.css",
+  "./css/dua.css",
+
+
   "./js/script.js",
+  "./js/salah-script.js",
+  
 
   "./manifest.json",
+  "./salah-data.json",
+
 
   "./icons/icon-192.png",
   "./icons/icon-512.png"

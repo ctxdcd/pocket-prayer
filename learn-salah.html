@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Learn Salah</title>
+
+  <link rel="stylesheet" href="css/salah-style.css" />
+</head>
+
+<body>
+
+  <main class="app-shell">
+
+    <!-- MENU VIEW -->
+    <section class="menu-view" id="menuView">
+
+      <div class="hero">
+        <p class="hero__eyebrow">GUIDE & MEANING</p>
+
+        <h1 class="hero__title">
+          Learn How to Pray Salah
+        </h1>
+
+        <p class="hero__text">
+          Step-by-step prayer guide with Arabic,
+          transliteration, and translations.
+        </p>
+      </div>
+
+      
+
+      <div class="prayer-grid">
+
+        <a href="?prayer=subh" class="prayer-card">
+          <span class="prayer-card__arabic">الفجر</span>
+          <h2>Subuh</h2>
+          <p>2 Rakaat</p>
+        </a>
+
+        <a href="?prayer=dhuhr" class="prayer-card">
+          <span class="prayer-card__arabic">الظهر</span>
+          <h2>Dzuhur</h2>
+          <p>4 Rakaat</p>
+        </a>
+
+        <a href="?prayer=asr" class="prayer-card">
+          <span class="prayer-card__arabic">العصر</span>
+          <h2>Ashar</h2>
+          <p>4 Rakaat</p>
+        </a>
+
+        <a href="?prayer=maghrib" class="prayer-card">
+          <span class="prayer-card__arabic">المغرب</span>
+          <h2>Maghrib</h2>
+          <p>3 Rakaat</p>
+        </a>
+
+        <a href="?prayer=isha" class="prayer-card">
+          <span class="prayer-card__arabic">العشاء</span>
+          <h2>Isya</h2>
+          <p>4 Rakaat</p>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- GUIDE VIEW -->
+    <section class="guide-view hidden" id="guideView">
+
+      <header class="guide-header">
+
+        <a href="learn-salah.html" class="back-button">
+          ← Back
+        </a>
+
+        <div class="guide-meta">
+          <p class="guide-meta__eyebrow">
+            COMPLETE GUIDE
+          </p>
+
+          <h1 id="prayerTitle"></h1>
+
+          <p id="prayerInfo"></p>
+        </div>
+
+      </header>
+
+      <div id="stepsContainer" class="steps-container"></div>
+
+    </section>
+
+  </main>
+
+  <script src="js/salah-script.js"></script>
+
+</body>
+</html>>

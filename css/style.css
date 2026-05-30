@@ -1354,6 +1354,65 @@ h2{
 }
 
 /* =========================================
+   INTRODUCTION TO SALAH CARD
+========================================= */
+
+.introduction-card{
+  margin-top:16px;
+}
+
+.intro-card__actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+
+.intro-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  min-height:30px;
+  padding:0 12px;
+
+  border-radius:999px;
+
+  font-size:.8rem;
+  font-weight:600;
+
+  color:#0f172a;
+
+  background:rgba(15,23,42,.06);
+
+  border:1px solid rgba(15,23,42,.08);
+}
+
+.intro-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  min-height:34px;
+  padding:0 14px;
+
+  border-radius:999px;
+
+  background:#0f172a;
+  color:#fff;
+
+  font-size:.82rem;
+  font-weight:600;
+
+  letter-spacing:-0.01em;
+}
+
+.introduction-card:hover .intro-button{
+  opacity:.92;
+}
+
+/* =========================================
    FULL ANDROID TAP HIGHLIGHT KILLER
 ========================================= */
 

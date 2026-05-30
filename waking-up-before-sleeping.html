@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <title>Sleep & Wake Du'a</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/dua.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <header class="hero">
+    <p class="hero__eyebrow">Daily Remembrance</p>
+    <h1 class="hero__title">Sleep & Wake Du'a</h1>
+    <p class="hero__subtitle">
+      End your day in remembrance and begin again with gratitude to Allah ﷻ.
+    </p>
+  </header>
+
+  <section class="practice-card">
+    <div class="section-heading">
+      <span>Practice Mode</span>
+    </div>
+
+    <div class="practice-controls">
+      <button id="practiceToggle" class="action-btn">Enable Practice Mode</button>
+      <button id="hideTranslationBtn" class="action-btn secondary">Hide Translation</button>
+      <button id="hideArabicBtn" class="action-btn secondary">Hide Arabic</button>
+    </div>
+
+    <p class="practice-note">
+      Tap individual Arabic words in Practice Mode to test your memorization.
+    </p>
+  </section>
+
+  <!-- SLEEP DU'A -->
+  <section class="dua-card">
+
+    <div class="card-top">
+      <div class="section-heading">
+        <span>Doa Sebelum Tidur</span>
+      </div>
+      <p class="card-caption">
+        A short du'a before sleeping, surrendering life and death to Allah.
+      </p>
+    </div>
+
+    <div class="arabic-wrapper" id="arabicContainerBefore">
+      <p class="arabic-line">
+        <span class="word">بِسْمِكَ</span>
+        <span class="word">اللَّهُمَّ</span>
+        <span class="word">أَحْيَا</span>
+        <span class="word">وَبِاسْمِكَ</span>
+        <span class="word">أَمُوتُ</span>
+      </p>
+    </div>
+
+    <div class="transliteration" id="transliterationContainerBefore">
+      Bismika allahumma ahyaa wa bismika amuut.
+    </div>
+
+    <div class="translations" id="translationContainerBefore">
+      <div class="translation-card">
+        <span class="translation-label">Indonesian</span>
+        <p>Dengan nama-Mu ya Allah, aku hidup dan dengan nama-Mu aku mati.</p>
+      </div>
+
+      <div class="translation-card">
+        <span class="translation-label">English</span>
+        <p>In Your name O Allah, I live and in Your name I die.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="meaning-card">
+    <div class="section-heading">
+      <span>Makna Doa Sebelum Tidur</span>
+    </div>
+
+    <p>
+      Sleep is a reminder of temporary death. The soul leaves the body by Allah’s permission, and we surrender ourselves completely to Him before closing our eyes.
+    </p>
+
+    <p>
+      This du'a builds awareness that life and death are not controlled by us, but by Allah alone.
+    </p>
+  </section>
+
+  <section class="breakdown-card">
+    <div class="section-heading">
+      <span>Word-by-Word Breakdown — Sebelum Tidur</span>
+    </div>
+
+    <div class="breakdown-grid">
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">بِسْمِكَ</div>
+        <div>Bismika</div>
+        <div>Dengan nama-Mu</div>
+        <div>In Your name</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">اللَّهُمَّ</div>
+        <div>Allahumma</div>
+        <div>Ya Allah</div>
+        <div>O Allah</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">أَحْيَا</div>
+        <div>Ahyaa</div>
+        <div>Aku hidup</div>
+        <div>I live</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">وَبِاسْمِكَ</div>
+        <div>Wa bismika</div>
+        <div>Dan dengan nama-Mu</div>
+        <div>And in Your name</div>
+      </div>
+
+      <div class="breakdown-row">
+        <div class="arabic-cell">أَمُوتُ</div>
+        <div>Amuutu</div>
+        <div>Aku mati</div>
+        <div>I die</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WAKE UP DU'A -->
+  <section class="dua-card">
+
+    <div class="card-top">
+      <div class="section-heading">
+        <span>Doa Bangun Tidur</span>
+      </div>
+      <p class="card-caption">
+        A du'a upon waking, thanking Allah for giving life after temporary death.
+      </p>
+    </div>
+
+    <div class="arabic-wrapper" id="arabicContainerAfter">
+      <p class="arabic-line">
+        <span class="word">الْحَمْدُ</span>
+        <span class="word">لِلَّهِ</span>
+        <span class="word">الَّذِي</span>
+        <span class="word">أَحْيَانَا</span>
+        <span class="word">بَعْدَ</span>
+        <span class="word">مَا</span>
+        <span class="word">أَمَاتَنَا</span>
+        <span class="word">وَإِلَيْهِ</span>
+        <span class="word">النُّشُورُ</span>
+      </p>
+    </div>
+
+    <div class="transliteration" id="transliterationContainerAfter">
+      Alhamdulillaahilladzii ahyaanaa ba'da maa amaatanaa wa ilaihin nusyuur.
+    </div>
+
+    <div class="translations" id="translationContainerAfter">
+      <div class="translation-card">
+        <span class="translation-label">Indonesian</span>
+        <p>
+          Segala puji bagi Allah yang telah menghidupkan kami setelah mematikan kami, dan kepada-Nya kami kembali.
+        </p>
+      </div>
+
+      <div class="translation-card">
+        <span class="translation-label">English</span>
+        <p>
+          Praise be to Allah Who gave us life after causing us to die, and to Him is the return.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="meaning-card">
+    <div class="section-heading">
+      <span>Makna Doa Bangun Tidur</span>
+    </div>
+
+    <p>
+      Waking up is not guaranteed. It is a return of the soul by Allah’s mercy. This du'a trains the heart to recognize every morning as a second chance.
+    </p>
+
+    <p>
+      Life is renewed not by your control, but by Allah’s will alone.
+    </p>
+  </section>
+
+</div>
+
+<script>
+const practiceBtn = document.getElementById("practiceToggle");
+const hideArabicBtn = document.getElementById("hideArabicBtn");
+const hideTranslationBtn = document.getElementById("hideTranslationBtn");
+
+const arabicContainers = [
+  document.getElementById("arabicContainerBefore"),
+  document.getElementById("arabicContainerAfter")
+];
+
+const transliterationContainers = [
+  document.getElementById("transliterationContainerBefore"),
+  document.getElementById("transliterationContainerAfter")
+];
+
+const translationContainers = [
+  document.getElementById("translationContainerBefore"),
+  document.getElementById("translationContainerAfter")
+];
+
+const words = document.querySelectorAll(".word");
+
+let practiceMode = false;
+
+practiceBtn.addEventListener("click", () => {
+  practiceMode = !practiceMode;
+
+  if (practiceMode) {
+    practiceBtn.textContent = "Practice Mode Enabled";
+    document.body.classList.add("practice-active");
+  } else {
+    practiceBtn.textContent = "Enable Practice Mode";
+    document.body.classList.remove("practice-active");
+    words.forEach(word => word.classList.remove("hidden-word"));
+  }
+});
+
+words.forEach(word => {
+  word.addEventListener("click", () => {
+    if (!practiceMode) return;
+    word.classList.toggle("hidden-word");
+  });
+});
+
+hideArabicBtn.addEventListener("click", () => {
+  arabicContainers.forEach(el => el.classList.toggle("hidden-section"));
+  transliterationContainers.forEach(el => el.classList.toggle("hidden-section"));
+});
+
+hideTranslationBtn.addEventListener("click", () => {
+  translationContainers.forEach(el => el.classList.toggle("hidden-section"));
+});
+</script>
+
+</body>
+</html>
